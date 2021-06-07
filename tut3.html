@@ -1,0 +1,14 @@
+<body>
+    <input type="button" value="Set paragraph background color" onclick="set_background()">
+    <p>hi</p>
+    <p>hello</p>
+  </body>
+  <script>
+      function set_background() {
+  
+  myBody = document.getElementsByTagName("body")[0];
+  myBodyElements = myBody.getElementsByTagName("p");
+  myP = myBodyElements[1];
+  myP.style.background = "red";
+}
+  </script>

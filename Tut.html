@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <title>Find Dom Elements
+    </title>
+</head>
+<body>
+   
+    <header id="header" class="headersection text-center py-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>My tutorials</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus voluptatum, eligendi minima enim repudiandae dolor dolorem optio magnam. Cumque fugiat eligendi illum sed ratione atque suscipit aspernatur voluptatum laudantium.
+               Tenetur modi placeat natus, nihil porro dignissimos explicabo labore veniam sit nobis repudiandae facere non ducimus repellat quis fugit optio vel nostrum aliquid quia minima aspernatur laboriosam aperiam! Officia, blanditiis?
+               Consequuntur, libero accusantium minus mollitia voluptatem odio sed et ex, atque, inventore est quaerat numquam delectus cupiditate sapiente soluta sequi! Soluta asperiores natus ab alias aut esse tempora nisi repellat.
+               Eveniet maxime nihil quidem. Alias in maxime quam non inventore, molestiae voluptatem ratione recusandae quidem dolor. Odit architecto praesentium minus pariatur deserunt, est facilis sequi laudantium dolore repellendus quasi perspiciatis.
+               Suscipit repellat sunt quasi consectetur, unde eligendi quam minima deserunt aliquid fugit cumque expedita tempora eius? Explicabo veritatis, odit numquam rerum quos aspernatur dignissimos facere deleniti fuga, sit repudiandae quasi!
+            </p>
+            <a href="" class="btn btn-info">read more</a> 
+            </div>
+        </div>
+        </div>
+    </header>
+    <section id="articles" class="articlessection mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1>
+                        Article-1
+                    </h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sunt accusamus maxime quo, facilis tenetur ipsa ex,
+             </p>
+              <a href="" class="btn btn-info">Read more</a>      
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="flower" class="flowersection mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                  <img src="images/flower.jpg" class="img-fluid" alt="">  
+                </div>
+                <div class="col-2">
+                    <img src="images/flower.jpg" class="img-fluid" alt="">  
+                  </div>
+                  <div class="col-2">
+                    <img src="images/flower.jpg" class="img-fluid" alt="">  
+                  </div>
+                  <div class="col-2">
+                    <img src="images/flower.jpg" class="img-fluid" alt="">  
+                  </div>
+                  <div class="col-2">
+                    <img src="images/flower.jpg" class="img-fluid" alt="">  
+                  </div>
+            </div>
+        </div>
+    </section>
+   <section id="forms" class="formsection mt-5">
+       <div class="container">
+           <div class="row">
+               <div class="col-4">
+               <form action="">
+                <input type="text" class="form-control mb-3" placeholder="testing1">  
+                <input type="text" class="form-control mb-3" placeholder="testing1">
+                <input type="text" class="form-control mb-3" placeholder="testing1">
+                <input type="text" class="form-control mb-3" placeholder="testing1">
+               </form>    
+               </div>
+               <div class="col-4">
+                <form action="">
+                 <input type="text" class="form-control mb-3" placeholder="testing2">  
+                 <input type="text" class="form-control mb-3" placeholder="testing2">
+                 <input type="text" class="form-control mb-3" placeholder="testing2">
+                 <input type="text" class="form-control mb-3" placeholder="testing2">
+                </form>    
+                </div>
+                <div class="col-4">
+                    <form action="">
+                     <input type="text" class="form-control mb-3" placeholder="testing3">  
+                     <input type="text" class="form-control mb-3" placeholder="testing3">
+                     <input type="text" class="form-control mb-3" placeholder="testing3">
+                     <input type="text" class="form-control mb-3" placeholder="testing3">
+                    </form>    
+                    </div>
+           </div>
+       </div>
+   </section> 
+   <script>
+    let header=document.getElementById('header');
+    console.log(header);
+    let header1=document.getElementsByTagName('h1')[1];
+    console.log(header1);
+    let show=document.getElementsByClassName('container')[1];
+    console.log(show);
+    let show1=document.querySelector('#header');
+    console.log(show1);
+    let show2=document.querySelectorAll('form')[1];
+    console.log(show2);
+    let show3=document.all;
+    console.log(show3);
+    let show4=document.querySelector('header').innerText;
+    console.log(show4);
+    let h=document.querySelector('header h1');
+    h.style.backgroundColor="red";
+   </script>
+</body>
+</html>
